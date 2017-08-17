@@ -1,0 +1,7 @@
+#!/bin/bash
+
+# This script is so dumb, it really just dumps things in /bin/
+# it also assumes you run it from the directory it came in.
+
+cp scripts/* /bin/
+

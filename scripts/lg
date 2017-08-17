@@ -1,0 +1,4 @@
+#!/bin/bash
+
+git log --decorate=full --graph --stat;
+
