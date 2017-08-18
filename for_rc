@@ -1,0 +1,12 @@
+" Rather than call opening a new window and calling !!gg yourself, you can be lazier if this is in your .vimrc:
+
+function New_scratch_window(shell_command)
+	new
+	set buftype=nofile
+	let b = append(0, systemlist(shellescape(a:shell_command)))
+	0
+endfunction
+com Gg call New_scratch_window("gg")
+com Lg call New_scratch_window("lg")
+
+
