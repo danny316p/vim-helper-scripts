@@ -1,6 +1,7 @@
 #!/bin/bash
 
 git status --untracked-files=no;
+git diff --stat;
 git diff;
 git status;
 
